@@ -30,13 +30,22 @@ export default {
                 </h2>
             </div>
             <div id="favicon">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-pinterest-p"></i>
-                <i class="fa-brands fa-google"></i>
+                <a href="#">
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-google"></i>
+                </a>
             </div>
-
         </section>
     </footer>
 </template>
