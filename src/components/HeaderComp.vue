@@ -105,6 +105,7 @@ export default {
 
     header{
         height: 70px;
+        padding: 1rem;
         nav{
             display: flex;
             justify-content: space-between;
