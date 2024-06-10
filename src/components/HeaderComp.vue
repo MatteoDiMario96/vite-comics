@@ -131,6 +131,8 @@ export default {
                             font-size: .8rem;
                             &.active{
                             color: $primary_color;
+                            padding-bottom: 2.3rem;
+                            border-bottom: 5px solid $primary_color;
                             }
                         }
                     }
