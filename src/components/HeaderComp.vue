@@ -90,7 +90,7 @@ export default {
             <div id="ul-header">
                 <ul>
                     <li v-for="link in UlHeaderLinks" :key="link.id">
-                        <a :href="link.href">
+                        <a :href="link.href" :class="(link.active === true) ? 'active' : ''">
                             {{ link.title }}
                         </a>
                     </li>
@@ -104,15 +104,36 @@ export default {
     @use '../styles/partials/variables' as *;
 
     header{
-        height: 90px;
-
-    }
-    ul{
-        display: flex;
-        li{
-            padding: 1rem;
-            a{
-                color: $primary-color
+        height: 70px;
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            #div-logo{
+                height: 100%;
+                a{
+                    height: 100%;
+                    img{
+                    height: 100%;
+                    }
+                }
+                
+            }
+            #ul-header{
+                ul{
+                    display: flex;
+                        li{
+                            padding: .5rem;
+                            a{
+                            color: $secondary-color;
+                            font-size: .8rem;
+                            &.active{
+                            color: $primary_color;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
