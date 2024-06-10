@@ -194,24 +194,19 @@ export default {
             </div>
             <div id="favicon">
                 <a href="#">
-                    <i class="fa-brands fa-facebook fa-xl"></i>
-                    *
+                    <img src="../assets/img2/footer-facebook.png" alt="Facebook link">
                 </a>
                 <a href="#">
-                    <i class="fa-brands fa-twitter"></i>
-                    *
+                    <img src="../assets/img2/footer-twitter.png" alt="Twitter link">
                 </a>
                 <a href="#">
-                    <i class="fa-brands fa-youtube"></i>
-                    *
+                    <img src="../assets/img2/footer-youtube.png" alt="YouTube link">
                 </a>
                 <a href="#">
-                    <i class="fa-brands fa-pinterest-p"></i>
-                    *
+                    <img src="../assets/img2/footer-pinterest.png" alt="Pinterest link">
                 </a>
                 <a href="#">
-                    <i class="fa-brands fa-google"></i>
-                    *
+                    <img src="../assets/img2/footer-periscope.png" alt="Periscope link">
                 </a>
             </div>
         </section>
@@ -232,6 +227,9 @@ export default {
                 ul{
                     padding-top: 2rem;
                     margin-bottom: 2rem;
+                    #shop{
+                        padding-top: 1rem;
+                    }
                     h2{
                     padding: .3rem;
                     margin-bottom: .3rem;
