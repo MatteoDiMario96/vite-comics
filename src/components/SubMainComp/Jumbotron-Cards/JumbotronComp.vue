@@ -15,11 +15,28 @@ export default {
 </script>
 
 <template>
-    <h1>
-        JUMBOTRONNNNNNN
-    </h1>
+    <div class="container">
+        <div>
+        Current Series
+    </div>
+    </div>
 </template>
 
-<style scoped>
-
+<style lang="scss" scoped>
+    @use '../../../styles/partials/variables' as *;
+    div.container{
+        max-width: 1050px;
+        margin: 0 auto;
+        div{
+        text-transform: uppercase;
+        background-color: $primary_color;
+        display: inline-block;
+        padding: .7rem .9rem .7rem .9rem;
+        color: $third_color;
+        position: relative;
+        top: 270px;
+        font-weight: 900;
+    }
+    }
+    
 </style>

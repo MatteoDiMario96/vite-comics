@@ -27,7 +27,7 @@ export default {
 <template>
     <main>
         <div id="div-black">
-            <section>
+            <section id="jumbotron">
                 <JumbotronComp/>
             </section>
             <section id="black">
@@ -45,7 +45,11 @@ export default {
 <style lang="scss" scoped>
     @use '../styles/partials/variables' as *;
     @use '../styles/partials/mixins' as *;
-
+    section#jumbotron{
+        background-image: url('../assets/img2/jumbotron.jpg');
+        height: 285px;
+        background-size: cover;
+    }
     div#div-black{
         background-color: #1c1c1c;
     }
