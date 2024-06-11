@@ -222,6 +222,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+    @use '../styles/partials/variables' as *;
         div#div-bg-img-footer{
             background-image: url('../assets/img2/footer-bg.jpg');
         }
@@ -229,7 +230,7 @@ export default {
             padding: 0 0 0 1rem;
             display: flex;
             justify-content: space-between;
-            max-width: 1050px;
+            max-width: $width_container;
             margin: 0 auto;
             div#ul{
                 display: flex;
@@ -272,7 +273,7 @@ export default {
             height: 70px;
             padding: 1rem;
             div#div-container-footer{
-                min-width: 1050px;
+                min-width: $width_container;
                 display: flex;
                 margin: 0 auto;
                 justify-content: space-between;

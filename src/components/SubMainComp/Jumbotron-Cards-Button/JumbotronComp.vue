@@ -25,7 +25,7 @@ export default {
 <style lang="scss" scoped>
     @use '../../../styles/partials/variables' as *;
     div.container{
-        max-width: 1050px;
+        max-width: $width_container;
         margin: 0 auto;
         div{
         text-transform: uppercase;

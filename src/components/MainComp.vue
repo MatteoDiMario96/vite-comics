@@ -1,14 +1,16 @@
 <script>
     import MainSectionArticleComp from './SubMainComp/MainSectionArticleComp.vue';
-    import JumbotronComp from './SubMainComp/Jumbotron-Cards/JumbotronComp.vue';
-    import CardsComp from './SubMainComp/Jumbotron-Cards/CardsComp.vue';
+    import JumbotronComp from './SubMainComp/Jumbotron-Cards-Button/JumbotronComp.vue';
+    import CardsComp from './SubMainComp/Jumbotron-Cards-Button/CardsComp.vue';
+    import ButtonComp from './SubMainComp/Jumbotron-Cards-Button/ButtonComp.vue';
 
 
 export default {
     components:{
         MainSectionArticleComp,
         JumbotronComp,
-        CardsComp
+        CardsComp,
+        ButtonComp,
     },
     data() {
         return {
@@ -32,6 +34,9 @@ export default {
             </section>
             <section id="black">
             <CardsComp/>
+            <div id="button">
+                <ButtonComp/>
+            </div>
         </section>
         </div>
         <div id="div-blu">
@@ -55,7 +60,6 @@ export default {
     }
     section#black{
         background-color: #1c1c1c;
-        height: 70px;
         padding: 1rem;
         // @include flex-center();
         color: $third_color;
@@ -63,7 +67,7 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        max-width: 1050px;
+        max-width: $width_container;
         margin: 0 auto;
     }
     div#div-blu{
@@ -74,7 +78,10 @@ export default {
         padding: 1rem;
         display: flex;
         background-color: $primary_color;
-        max-width: 1050px;
+        max-width: $width_container;
+        margin: 0 auto;
+    }
+    div#button{
         margin: 0 auto;
     }
 </style>

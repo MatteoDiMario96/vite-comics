@@ -62,6 +62,7 @@ export default {
         align-items: center;
         height: 100%;
         width: 100%;
+        margin-left: 1rem;
         article{
             display: flex;
             align-items: center;

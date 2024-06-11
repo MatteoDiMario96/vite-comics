@@ -19,42 +19,35 @@ export default {
                     active: false,
                     href: "#",
                 },{ 
-                },{ 
                     id: 4,
                     title: "TV",
                     active: false,
                     href: "#",
-                },{ 
                 },{ 
                     id: 5,
                     title: "GAMES",
                     active: false,
                     href: "#",
                 },{ 
-                },{ 
                     id: 6,
                     title: "COLLECTIBLES",
                     active: false,
                     href: "#",
-                },{ 
                 },{ 
                     id: 7,
                     title: "VIDEOS",
                     active: false,
                     href: "#",
                 },{ 
-                },{ 
                     id: 8,
                     title: "FANS",
                     active: false,
                     href: "#",
                 },{ 
-                },{ 
                     id: 9,
                     title: "NEWS",
                     active: false,
                     href: "#",
-                },{ 
                 },{ 
                     id: 10,
                     title: "SHOP",
@@ -132,7 +125,8 @@ export default {
                             padding: .5rem;
                             a{
                             color: $secondary-color;
-                            font-size: .8rem;
+                            font-size: .6rem;
+                            font-weight: 700;
                             &.active{
                             color: $primary_color;
                             padding-bottom: 2.3rem;
