@@ -3,3 +3,11 @@
     justify-content: flex-start;
     align-items: center;
 }
+
+@mixin padding-centered-l-r{
+    padding: 0 12rem 0 12rem;
+}
+
+@mixin padding-centered-t-b{
+    padding: 3rem 0 3rem 0;
+}

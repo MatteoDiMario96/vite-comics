@@ -20,14 +20,19 @@ export default {
 
 <template>
     <main>
-        <section id="black">
+
+        <div id="div-black">
+            <section id="black">
             <p>
                 -->Content goes here <--
             </p>
         </section>
-        <section id="blu">
+        </div>
+        <div id="div-blu">
+            <section id="blu">
             <MainSectionArticleComp/>
         </section>
+        </div>
     </main>
 </template>
 
@@ -35,6 +40,9 @@ export default {
     @use '../styles/partials/variables' as *;
     @use '../styles/partials/mixins' as *;
 
+    div#div-black{
+        background-color: #1c1c1c;
+    }
     section#black{
         background-color: #1c1c1c;
         height: 70px;
@@ -45,11 +53,18 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        max-width: 1050px;
+        margin: 0 auto;
+    }
+    div#div-blu{
+        background-color: $primary_color;
     }
     section#blu{
         height: 80px;
         padding: 1rem;
         display: flex;
         background-color: $primary_color;
+        max-width: 1050px;
+        margin: 0 auto;
     }
 </style>

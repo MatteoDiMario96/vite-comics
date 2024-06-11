@@ -128,10 +128,12 @@ export default {
 
 <template>
     <footer>
-        <section id="ul-links">
+
+        <div id="div-bg-img-footer">
+            <section id="ul-links">
             <div id="ul">
                 <div>
-                    <ul id="dc_comics">
+                    <ul id="dc-comics">
                     <h2>
                         Dc Comics
                     </h2>
@@ -180,61 +182,66 @@ export default {
                 
             </div>
         </section>
+        </div>
 
         <nav>
-            <button>
-                Signup-Now
-            </button>
+            <div id="div-container-footer">
+                    <button>
+                        Signup-Now
+                    </button>
 
-            <section id="sign-up-social">
-            <div id="follow_us">
-                <h2>
-                Follow us
-                </h2>
+                <section id="sign-up-social">
+                    <div id="follow_us">
+                        <h2>
+                        Follow us
+                        </h2>
+                    </div>
+                    <div id="favicon">
+                        <a href="#">
+                            <img src="../assets/img2/footer-facebook.png" alt="Facebook link">
+                        </a>
+                        <a href="#">
+                            <img src="../assets/img2/footer-twitter.png" alt="Twitter link">
+                        </a>
+                        <a href="#">
+                            <img src="../assets/img2/footer-youtube.png" alt="YouTube link">
+                        </a>
+                        <a href="#">
+                            <img src="../assets/img2/footer-pinterest.png" alt="Pinterest link">
+                        </a>
+                        <a href="#">
+                            <img src="../assets/img2/footer-periscope.png" alt="Periscope link">
+                        </a>
+                    </div>
+                </section>
             </div>
-            <div id="favicon">
-                <a href="#">
-                    <img src="../assets/img2/footer-facebook.png" alt="Facebook link">
-                </a>
-                <a href="#">
-                    <img src="../assets/img2/footer-twitter.png" alt="Twitter link">
-                </a>
-                <a href="#">
-                    <img src="../assets/img2/footer-youtube.png" alt="YouTube link">
-                </a>
-                <a href="#">
-                    <img src="../assets/img2/footer-pinterest.png" alt="Pinterest link">
-                </a>
-                <a href="#">
-                    <img src="../assets/img2/footer-periscope.png" alt="Periscope link">
-                </a>
-            </div>
-        </section>
+            
         </nav>
         
     </footer>
 </template>
 
 <style lang="scss" scoped>
-        section#ul-links{
+        div#div-bg-img-footer{
             background-image: url('../assets/img2/footer-bg.jpg');
+        }
+        section#ul-links{
             padding: 0 0 0 1rem;
             display: flex;
             justify-content: space-between;
+            max-width: 1050px;
+            margin: 0 auto;
             div#ul{
                 display: flex;
                 flex-direction: row;
+                padding-top: 1.2rem;
                 ul{
-                    padding-top: 2rem;
-                    margin-bottom: 2rem;
-                    #shop{
-                        padding-top: 1rem;
-                    }
+                    
                     h2{
                     padding: .3rem;
                     margin-bottom: .3rem;
                     text-transform: uppercase;
-                    font-size: 1.15rem;
+                    font-size: 1.10rem;
                     font-weight: 700;
                     color: white;
                     }
@@ -242,6 +249,12 @@ export default {
                         padding: .3rem;
                         font-size: .8rem;                       
                     }
+                }
+                ul#dc-comics{
+                    margin-bottom: 1.2rem;
+                }
+                ul#shop{
+                    margin-bottom: 2.2rem;
                 }
             }
             div#img{
@@ -258,6 +271,12 @@ export default {
             background-color: #303030;
             height: 70px;
             padding: 1rem;
+            div#div-container-footer{
+                min-width: 1050px;
+                display: flex;
+                margin: 0 auto;
+                justify-content: space-between;
+            }
             button{
                 background-color: #303030;
                 border: 2px solid #0777df;
@@ -265,6 +284,7 @@ export default {
                 padding: .6rem;
                 text-transform: uppercase;
                 font-weight: 600;
+                align-self: center;
             }
             section#sign-up-social{
                 display: flex;

@@ -102,15 +102,19 @@ export default {
 
 <style lang="scss" scoped>
     @use '../styles/partials/variables' as *;
+    @use '../styles/partials/mixins' as *;
 
     header{
         height: 70px;
         padding: 1rem;
+
         nav{
             display: flex;
             justify-content: space-between;
             align-items: center;
             height: 100%;
+            max-width: 1050px;
+            margin: 0 auto;
             #div-logo{
                 height: 100%;
                 a{

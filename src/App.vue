@@ -24,11 +24,13 @@ export default {
 </script>
 
 <template>
-    <HeaderComp/>
+    <div id="container">
+      <HeaderComp/>
 
-    <MainComp/>
+      <MainComp/>
 
-    <FooterComp/>
+      <FooterComp/>
+    </div>
 </template>
 
 <style lang="scss">
