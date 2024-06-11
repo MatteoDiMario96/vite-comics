@@ -1,5 +1,5 @@
 <script>
-    import MainSectionArticleComp from './MainSectionArticleComp.vue';
+    import MainSectionArticleComp from './SubMainComp/MainSectionArticleComp.vue';
 export default {
     components:{
         MainSectionArticleComp,
