@@ -1,8 +1,14 @@
 <script>
     import MainSectionArticleComp from './SubMainComp/MainSectionArticleComp.vue';
+    import JumbotronComp from './SubMainComp/Jumbotron-Cards/JumbotronComp.vue';
+    import CardsComp from './SubMainComp/Jumbotron-Cards/CardsComp.vue';
+
+
 export default {
     components:{
         MainSectionArticleComp,
+        JumbotronComp,
+        CardsComp
     },
     data() {
         return {
@@ -20,12 +26,12 @@ export default {
 
 <template>
     <main>
-
         <div id="div-black">
+            <section>
+                <JumbotronComp/>
+            </section>
             <section id="black">
-            <p>
-                -->Content goes here <--
-            </p>
+            <CardsComp/>
         </section>
         </div>
         <div id="div-blu">
