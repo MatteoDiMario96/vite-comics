@@ -44,6 +44,7 @@ export default {
         font-size: 1.6rem;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     section#blu{
         height: 80px;
